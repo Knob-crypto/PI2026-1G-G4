@@ -1,3 +1,8 @@
+
+/* =========================================
+   CONFIGURAÇÕES GERAIS
+========================================= */
+
 * {
     margin: 0;
     padding: 0;
@@ -7,42 +12,59 @@
 body {
     background-color: #1B2842;
     color: #FFFFFF;
-    font-family: Arial, sans-serif;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    min-height: 100vh;
 }
 
 
+/* =========================================
+   HEADER
+========================================= */
 
 #header {
     width: 100%;
-    height: 70px;
+    height: 60px;
 
-    background-color: #000000;
+    background-color: #1B2842;
 
     display: flex;
     align-items: center;
 
-    padding: 0 40px;
+    padding: 0 30px;
 
-    border-bottom: 3px solid #2C406B;
+    border-bottom: 1px solid #2C406B;
 }
 
+
+/* LOGO / NOME */
+
 #header h3 {
+    width: 180px;
+
     color: #FFFFFF;
-    font-size: 22px;
+
+    font-size: 15px;
+
+    line-height: 1.1;
 
     margin-right: auto;
 }
+
+
+/* MENU */
 
 #header a {
     color: #FFFFFF;
 
     text-decoration: none;
 
+    font-size: 14px;
+
     margin-left: 30px;
 
-    font-size: 16px;
-
-    transition: 0.3s;
+    transition: 0.2s;
 }
 
 #header a:hover {
@@ -50,112 +72,455 @@ body {
 }
 
 
+/* IMAGEM DO HEADER */
 
+#header img {
+    width: 30px;
+    height: 30px;
 
-#imagem_pg1,
-#imagem_pg2,
-#imagem_pg3 {
-    width: 90%;
-    max-width: 1100px;
+    object-fit: contain;
 
-    margin: 40px auto;
-
-    padding: 30px;
-
-    background-color: #2C406B;
-
-    border: 2px solid #3D5894;
-
-    border-radius: 10px;
-
-    display: flex;
-    align-items: center;
-
-    gap: 40px;
+    margin-left: 25px;
 }
 
 
+/* =========================================
+   PÁGINA INICIAL
+========================================= */
 
+#imagem_pg1 {
+    position: relative;
 
-#imagem_pg1 img,
-#imagem_pg2 img,
-#imagem_pg3 img {
-    width: 45%;
+    width: 100%;
 
-    border-radius: 8px;
-
-    border: 2px solid #4B6DB7;
+    padding: 0 30px 25px;
 }
 
 
+/* IMAGEM PRINCIPAL */
+
+#imagem_pg1 img {
+    width: 100%;
+
+    height: 300px;
+
+    object-fit: cover;
+
+    display: block;
+
+    border-radius: 5px;
+}
 
 
-#imagem_pg1 p:first-of-type,
-#imagem_pg2 p:first-of-type,
-#imagem_pg3 p:first-of-type {
+/* =========================================
+   GRADIENTE SOBRE A IMAGEM
+========================================= */
+
+#imagem_pg1::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 30px;
+
+    width: calc(100% - 60px);
+
+    height: 300px;
+
+    background: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.95),
+        rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0)
+    );
+
+    pointer-events: none;
+}
+
+
+/* =========================================
+   TÍTULO PRINCIPAL
+========================================= */
+
+#imagem_pg1 p:first-of-type {
+    position: absolute;
+
+    top: 45px;
+    left: 55px;
+
+    width: 350px;
+
     color: #FFFFFF;
 
-    font-size: 28px;
+    font-size: 38px;
 
     font-weight: bold;
 
-    margin-bottom: 15px;
+    line-height: 1.1;
+
+    z-index: 2;
 }
 
 
+/* =========================================
+   TEXTO PRINCIPAL
+========================================= */
 
-#imagem_pg1 p,
-#imagem_pg2 p,
-#imagem_pg3 p {
+#imagem_pg1 p:last-of-type {
+    width: 100%;
+
+    padding: 25px 5px 10px;
+
     color: #FFFFFF;
 
-    font-size: 16px;
+    font-size: 17px;
 
     line-height: 1.6;
 }
 
 
-
+/* =========================================
+   CARROSSEL
+========================================= */
 
 #carrosel {
-    width: 90%;
-    max-width: 1100px;
+    width: 100%;
 
-    margin: 40px auto;
-
-    padding: 20px;
-
-    background-color: #2C406B;
-
-    border-radius: 10px;
+    padding: 0 25px 35px;
 
     display: flex;
 
     justify-content: center;
 
-    gap: 20px;
+    align-items: flex-end;
+
+    gap: 12px;
+
+    position: relative;
 }
 
+
+/* IMAGENS DO CARROSSEL */
+
 #carrosel img {
-    width: 180px;
-    height: 120px;
+    width: 18%;
+
+    height: 80px;
 
     object-fit: cover;
 
-    border-radius: 8px;
+    border-radius: 7px;
 
-    border: 2px solid #4B6DB7;
+    border: 2px solid transparent;
 
     transition: 0.3s;
 }
 
-#carrosel img:hover {
-    border-color: #5E89E5;
 
-    transform: scale(1.05);
+/* IMAGEM CENTRAL */
+
+#carrosel img:nth-child(3) {
+    width: 22%;
+
+    height: 105px;
+
+    border-color: #FFFFFF;
 }
 
 
+/* HOVER */
+
+#carrosel img:hover {
+    border-color: #5E89E5;
+
+    transform: translateY(-4px);
+}
+
+
+/* =========================================
+   BOLINHAS DO CARROSSEL
+========================================= */
+
+#carrosel::after {
+    content: "●  ●  ●  ●  ●";
+
+    position: absolute;
+
+    bottom: 5px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    color: #5E89E5;
+
+    font-size: 10px;
+
+    letter-spacing: 3px;
+}
+
+
+/* =========================================
+   PÁGINA SOBRE
+========================================= */
+
+#imagem_pg2 {
+    position: relative;
+
+    width: 100%;
+
+    padding: 0 30px 20px;
+}
+
+
+/* IMAGEM */
+
+#imagem_pg2 img {
+    width: 100%;
+
+    height: 300px;
+
+    object-fit: cover;
+
+    display: block;
+
+    border-radius: 5px;
+}
+
+
+/* GRADIENTE */
+
+#imagem_pg2::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 30px;
+
+    width: calc(100% - 60px);
+
+    height: 300px;
+
+    background: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.95),
+        rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0)
+    );
+
+    pointer-events: none;
+}
+
+
+/* =========================================
+   TÍTULO SOBRE
+========================================= */
+
+#imagem_pg2 p:first-of-type {
+    position: absolute;
+
+    top: 45px;
+    left: 55px;
+
+    width: 350px;
+
+    color: #FFFFFF;
+
+    font-size: 36px;
+
+    font-weight: bold;
+
+    line-height: 1.1;
+
+    z-index: 2;
+}
+
+
+/* =========================================
+   TEXTO SOBRE
+========================================= */
+
+#imagem_pg2 p:last-of-type {
+    width: 100%;
+
+    padding: 25px 5px 10px;
+
+    color: #FFFFFF;
+
+    font-size: 17px;
+
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   PASSOS
+========================================= */
+
+#passos {
+    width: 100%;
+
+    padding: 10px 40px 40px;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    column-gap: 20px;
+
+    align-items: start;
+}
+
+
+/* TÍTULOS DOS PASSOS */
+
+#passos p:nth-child(1),
+#passos p:nth-child(3),
+#passos p:nth-child(5) {
+    color: #FFFFFF;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    text-align: center;
+
+    padding-bottom: 10px;
+
+    border-bottom: 3px solid #FFFFFF;
+}
+
+
+/* CAIXAS DOS PASSOS */
+
+#passos p:nth-child(2),
+#passos p:nth-child(4),
+#passos p:nth-child(6) {
+    background-color: #FFFFFF;
+
+    color: #1B2842;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    text-align: center;
+
+    padding: 15px 10px;
+
+    margin-top: 15px;
+
+    min-height: 60px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 3px;
+}
+
+
+/* =========================================
+   PÁGINA BENEFÍCIOS
+========================================= */
+
+#imagem_pg3 {
+    position: relative;
+
+    width: 100%;
+
+    padding: 0 30px 20px;
+}
+
+
+/* IMAGEM */
+
+#imagem_pg3 img {
+    width: 100%;
+
+    height: 300px;
+
+    object-fit: cover;
+
+    display: block;
+
+    border-radius: 5px;
+}
+
+
+/* GRADIENTE */
+
+#imagem_pg3::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 30px;
+
+    width: calc(100% - 60px);
+
+    height: 300px;
+
+    background: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.95),
+        rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0)
+    );
+
+    pointer-events: none;
+}
+
+
+/* =========================================
+   TÍTULO BENEFÍCIOS
+========================================= */
+
+#imagem_pg3 p:first-of-type {
+    position: absolute;
+
+    top: 45px;
+    left: 55px;
+
+    width: 350px;
+
+    color: #FFFFFF;
+
+    font-size: 36px;
+
+    font-weight: bold;
+
+    line-height: 1.1;
+
+    z-index: 2;
+}
+
+
+/* =========================================
+   TEXTO BENEFÍCIOS
+========================================= */
+
+#imagem_pg3 p:last-of-type {
+    width: 100%;
+
+    padding: 25px 5px 10px;
+
+    color: #FFFFFF;
+
+    font-size: 17px;
+
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   BOTÕES
+========================================= */
 
 button {
     background-color: #4B6DB7;
@@ -170,7 +535,9 @@ button {
 
     cursor: pointer;
 
-    font-size: 15px;
+    font-size: 14px;
+
+    transition: 0.2s;
 }
 
 button:hover {
@@ -178,80 +545,181 @@ button:hover {
 }
 
 
+/* =========================================
+   FOOTER
+========================================= */
 
 #footer {
     width: 100%;
 
-    margin-top: 50px;
+    min-height: 55px;
 
-    padding: 25px 40px;
-
-    background-color: #000000;
-
-    border-top: 3px solid #2C406B;
+    background-color: #2C406B;
 
     display: flex;
 
+    align-items: center;
+
     justify-content: space-between;
 
-    align-items: center;
+    padding: 12px 30px;
+
+    margin-top: 10px;
+
+    border-top: 2px solid #3D5894;
 }
 
 #footer p {
     color: #FFFFFF;
 
-    font-size: 14px;
+    font-size: 12px;
 }
 
 #footer img {
-    width: 50px;
+    width: 30px;
+    height: 30px;
 }
 
 
+/* =========================================
+   RESPONSIVIDADE
+========================================= */
 
 @media (max-width: 700px) {
 
     #header {
         height: auto;
 
-        padding: 20px;
+        padding: 15px 20px;
 
         flex-wrap: wrap;
     }
+
 
     #header h3 {
         width: 100%;
 
-        margin-bottom: 15px;
+        margin-bottom: 12px;
+
+        font-size: 14px;
     }
 
+
     #header a {
-        margin-left: 15px;
+        font-size: 12px;
+
+        margin-left: 0;
+
+        margin-right: 18px;
     }
+
+
+    #header img {
+        width: 25px;
+        height: 25px;
+
+        margin-left: 5px;
+    }
+
 
     #imagem_pg1,
     #imagem_pg2,
     #imagem_pg3 {
-        flex-direction: column;
-
-        padding: 25px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
+
+
+    #imagem_pg1::before,
+    #imagem_pg2::before,
+    #imagem_pg3::before {
+        left: 20px;
+
+        width: calc(100% - 40px);
+    }
+
 
     #imagem_pg1 img,
     #imagem_pg2 img,
     #imagem_pg3 img {
-        width: 100%;
+        height: 230px;
     }
+
+
+    #imagem_pg1 p:first-of-type,
+    #imagem_pg2 p:first-of-type,
+    #imagem_pg3 p:first-of-type {
+        left: 40px;
+
+        top: 35px;
+
+        width: 280px;
+
+        font-size: 30px;
+    }
+
+
+    #imagem_pg1 p:last-of-type,
+    #imagem_pg2 p:last-of-type,
+    #imagem_pg3 p:last-of-type {
+        font-size: 15px;
+    }
+
 
     #carrosel {
-        flex-wrap: wrap;
+        padding-left: 15px;
+        padding-right: 15px;
+
+        gap: 7px;
     }
+
+
+    #carrosel img {
+        width: 18%;
+
+        height: 60px;
+    }
+
+
+    #carrosel img:nth-child(3) {
+        width: 22%;
+
+        height: 80px;
+    }
+
+
+    #passos {
+        padding-left: 20px;
+        padding-right: 20px;
+
+        column-gap: 8px;
+    }
+
+
+    #passos p:nth-child(1),
+    #passos p:nth-child(3),
+    #passos p:nth-child(5) {
+        font-size: 13px;
+    }
+
+
+    #passos p:nth-child(2),
+    #passos p:nth-child(4),
+    #passos p:nth-child(6) {
+        font-size: 12px;
+
+        padding: 12px 6px;
+    }
+
 
     #footer {
-        flex-direction: column;
+        padding: 12px 20px;
+    }
 
-        gap: 15px;
 
-        text-align: center;
+    #footer p {
+        font-size: 10px;
     }
 }
+
+
