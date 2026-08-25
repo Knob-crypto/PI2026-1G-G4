@@ -1,103 +1,43 @@
+
 <!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="VR English Learns: aprenda inglês na prática através de cenários imersivos em realidade virtual.">
-    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%234B6DB7'/%3E%3Ctext x='32' y='42' font-size='24' font-family='Arial' font-weight='bold' fill='white' text-anchor='middle'%3EVR%3C/text%3E%3C/svg%3E">
-    <title>Início | VR English Learns</title>
-    <link rel="stylesheet" href="../css/style.css">
-    <script src="../javascript/Scripts.js" defer></script>
-</head>
-<body>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Inicio - Tecnologias Imersivas no desemvolvimento das habilidades em inglês</title>
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/script.js">Carrossel</script>
+    </head>
+    <body>
+      
+     <header>
 
-    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+            <h3>VR English learns</h3>
+            <a href="../PI2026-1G-G4/Index.html">Início</a>
+            <a href="../PI2026-1G-G4/paginas/sobre.html">Sobre</a>
+            <a href="../PI2026-1G-G4/paginas/beneficios.html">Benefícios</a>
 
-    <header>
-        <p class="logo">VR English learns</p>
-        <nav aria-label="Navegação principal">
-            <ul class="menu">
-                <li><a href="Index.html" aria-current="page">Início</a></li>
-                <li><a href="sobre.html">Sobre</a></li>
-                <li><a href="beneficios.html">Benefícios</a></li>
-            </ul>
-        </nav>
-    </header>
+     </header>
+        
+     <div class="imagem_pg1">
+          <img src="imagens/inicio.jpeg" width="100%%" height="30%">
+          <p>O Futuro Da Aprendizagem De Inglês</p>
+     </div>
 
-    <main id="conteudo">
 
-        <section class="hero">
-            <img src="../imagens/inicio.jpeg" alt="Estudante usando óculos de realidade virtual e interagindo com um ambiente digital">
-            <h1>O Futuro Da Aprendizagem De Inglês</h1>
-        </section>
 
-        <section class="texto-destaque reveal">
-            <div class="linha" aria-hidden="true"></div>
-            <p>O futuro do aprendizado de idiomas é interativo.
-Ao unir o ensino de inglês às tecnologias
-imersivas, transformamos a teoria em prática
-real, permitindo que os estudantes vivenciem o
-idioma em cenários digitais inovadores e
-conectados.
+     <div class="carrosel">
+          <div class="card-carrosel"><img src="imagens/c1.jpg" alt="" width="200" height="200"></div>
+          <div class="card-carrosel"><img src="imagens/c2.jpg" alt="" width="200" height="200"></div>
+          <div class="card-carrosel"><img src="imagens/c3.jpg" alt="" width="200" height="200"></div>
+          <div class="card-carrosel"><img src="imagens/c4.jpg" alt="" width="200" height="200"></div>
+          <div class="card-carrosel"><img src="imagens/c5.jpg" alt="" width="200" height="200"></div>
+     </div>
 
-Navegue por este site para entender o impacto,
-os dados e os benefícios dessa revolução
-tecnológica que está redefinindo o caminho
-rumo à fluência.</p>
-        </section>
+       <footer>
+            <p>Contato: Grupo4pi1g@gmail.com</p>
+            <img src="../imagens/Logo_IFC_horizontal.png" width="75" higth="50">
+       </footer>
 
-        <section class="carrossel-secao reveal" aria-roledescription="carrossel" aria-label="Galeria de alunos utilizando realidade virtual">
-
-            <div class="carrossel" id="carrossel" tabindex="0">
-                <ul class="carrossel-trilho" id="carrosselTrilho">
-                    <li class="carrossel-slide" role="group" aria-roledescription="slide" aria-label="1 de 5">
-                        <img src="../imagens/c1.jpg" alt="Criança usando óculos de VR" loading="lazy">
-                        <p class="carrossel-legenda">Aprendizado desde cedo</p>
-                    </li>
-                    <li class="carrossel-slide" role="group" aria-roledescription="slide" aria-label="2 de 5">
-                        <img src="../imagens/c2.jpg" alt="Alunos com óculos de VR na sala de aula" loading="lazy">
-                        <p class="carrossel-legenda">Prática em sala de aula</p>
-                    </li>
-                    <li class="carrossel-slide" role="group" aria-roledescription="slide" aria-label="3 de 5">
-                        <img src="../imagens/c3.jpg" alt="Aluno surpreso usando óculos de VR" loading="lazy">
-                        <p class="carrossel-legenda">Imersão total no idioma</p>
-                    </li>
-                    <li class="carrossel-slide" role="group" aria-roledescription="slide" aria-label="4 de 5">
-                        <img src="../imagens/c4.jpg" alt="Aluno usando óculos de VR" loading="lazy">
-                        <p class="carrossel-legenda">Cenários reais do cotidiano</p>
-                    </li>
-                    <li class="carrossel-slide" role="group" aria-roledescription="slide" aria-label="5 de 5">
-                        <img src="../imagens/c5.jpg" alt="Aluno usando óculos de VR" loading="lazy">
-                        <p class="carrossel-legenda">Confiança para falar</p>
-                    </li>
-                </ul>
-
-                <button type="button" class="carrossel-seta carrossel-seta--anterior" aria-label="Imagem anterior">
-                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>
-                </button>
-                <button type="button" class="carrossel-seta carrossel-seta--proxima" aria-label="Próxima imagem">
-                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
-                </button>
-            </div>
-
-            <div class="carrossel-dots" id="carrosselDots" role="tablist" aria-label="Selecionar imagem">
-                <button type="button" class="dot" role="tab" aria-label="Ir para imagem 1" aria-selected="false"><span></span></button>
-                <button type="button" class="dot" role="tab" aria-label="Ir para imagem 2" aria-selected="false"><span></span></button>
-                <button type="button" class="dot" role="tab" aria-label="Ir para imagem 3" aria-selected="false"><span></span></button>
-                <button type="button" class="dot" role="tab" aria-label="Ir para imagem 4" aria-selected="false"><span></span></button>
-                <button type="button" class="dot" role="tab" aria-label="Ir para imagem 5" aria-selected="false"><span></span></button>
-            </div>
-
-            <p class="sr-only" id="carrosselStatus" aria-live="polite" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);"></p>
-
-        </section>
-
-    </main>
-
-    <footer>
-        <p>&copy; 2026 VR English Learns &middot; Contato: <a href="mailto:grupo4pi1g@gmail.com">grupo4pi1g@gmail.com</a></p>
-        <img src="../imagens/Logo_IFC_horizontal.png" width="75" higth="50">
-    </footer>
-
-</body>
+    </body>
 </html>
+
