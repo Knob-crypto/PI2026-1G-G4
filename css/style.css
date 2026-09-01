@@ -740,8 +740,35 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 24px;
+    flex-wrap: wrap;
     text-align: center;
     border-top: 1px solid rgba(94, 137, 229, .18);
+}
+
+.logo_ifc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 180px;
+}
+
+.logo_ifc img {
+    width: min(180px, 42vw);
+    height: auto;
+    object-fit: contain;
+    padding: 10px 14px;
+    border-radius: 14px;
+    background: rgba(255, 255, 255, .06);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, .25);
+    transition: transform var(--transicao), filter var(--transicao), box-shadow var(--transicao);
+}
+
+.logo_ifc:hover img,
+.logo_ifc:focus-within img {
+    transform: scale(1.06);
+    filter: brightness(1.08);
+    box-shadow: 0 16px 30px rgba(94, 137, 229, .2);
 }
 
 footer p {
@@ -797,6 +824,14 @@ footer a:focus-visible {
     .hero-marca {
         font-size: 11px;
         padding: 7px 14px;
+    }
+
+    .logo_ifc {
+        min-width: 150px;
+    }
+
+    .logo_ifc img {
+        width: min(150px, 46vw);
     }
 
     .texto-destaque {
