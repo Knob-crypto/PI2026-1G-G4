@@ -497,7 +497,47 @@ a {
 .carrossel-botao:hover {
     background: var(--azul-1);
 }
+.footer-coluna--mapa {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+}
 
+.footer-mapa-grupo {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-mapa-titulo {
+    font-weight: 700;
+    font-size: 13.5px;
+    text-transform: uppercase;
+    letter-spacing: .4px;
+    margin-bottom: 8px;
+    padding-bottom: 6px;
+    border-bottom: 2px solid #DDE1E8;
+}
+
+.footer-mapa-grupo a:not(.footer-mapa-titulo) {
+    font-size: 12.5px;
+    color: #5B6472;
+    padding: 4px 0;
+    line-height: 1.4;
+    transition: color .2s ease;
+}
+
+.footer-mapa-grupo a:not(.footer-mapa-titulo):hover,
+.footer-mapa-grupo a:not(.footer-mapa-titulo):focus-visible {
+    color: #4B6DB7;
+    text-decoration: underline;
+}
+
+@media (max-width: 700px) {
+    .footer-coluna--mapa {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
 #footer {
     margin-top: 50px;
     padding: 55px 7% 25px;
