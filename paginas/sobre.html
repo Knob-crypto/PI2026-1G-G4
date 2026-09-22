@@ -288,44 +288,43 @@
                 <h2>VR ao longo do tempo</h2>
             </div>
 
-            <div class="linha-tempo">
-
-                <div>
-                    <strong>Décadas de 1950–1960</strong>
-                    <p>
-                        Surgiram experiências e equipamentos que
-                        buscavam combinar imagens, som e outros
-                        estímulos para criar experiências imersivas.
-                    </p>
+            <div class="explorador-tempo" id="explorador-tempo">
+                <div class="marcadores-tempo" role="tablist" aria-label="Períodos da evolução das tecnologias imersivas">
+                    <button class="marcador-tempo ativo" type="button" role="tab" aria-selected="true"><span>1838</span></button>
+                    <button class="marcador-tempo" type="button" role="tab" aria-selected="false"><span>1960</span></button>
+                    <button class="marcador-tempo" type="button" role="tab" aria-selected="false"><span>1990</span></button>
+                    <button class="marcador-tempo" type="button" role="tab" aria-selected="false"><span>2010</span></button>
+                    <button class="marcador-tempo" type="button" role="tab" aria-selected="false"><span>2020</span></button>
+                    <button class="marcador-tempo" type="button" role="tab" aria-selected="false"><span>Futuro</span></button>
                 </div>
 
-                <div>
-                    <strong>Décadas de 1980–1990</strong>
-                    <p>
-                        A realidade virtual começou a ganhar maior
-                        atenção comercial e acadêmica, embora os
-                        equipamentos ainda fossem caros e limitados.
-                    </p>
-                </div>
+                <article class="painel-tempo" id="painel-tempo" role="tabpanel" tabindex="0" aria-live="polite">
+                    <div class="painel-tempo-imagem">
+                        <img src="../imagens/linha_tempo-1.webp" alt="Ilustração de uma experiência imersiva em 1838">
+                        <span class="painel-tempo-contador">01 / 06</span>
+                    </div>
+                    <div class="painel-tempo-conteudo">
+                        <span class="painel-tempo-periodo">1838 · PRIMEIROS ESTUDOS</span>
+                        <h3>O nascimento da visão estereoscópica</h3>
+                        <p>As primeiras imagens em 3D criavam a sensação de profundidade usando uma imagem diferente para cada olho.</p>
+                        <p class="painel-tempo-detalhe"><strong>Tecnologia:</strong> imagens estereoscópicas</p>
+                        <div class="futuro-possibilidades" hidden>
+                            <div><strong>Realidade virtual</strong><span>Experiências cada vez mais realistas.</span></div>
+                            <div><strong>Inteligência artificial</strong><span>Ambientes capazes de responder ao usuário.</span></div>
+                            <div><strong>Realidade aumentada</strong><span>Informações digitais integradas ao mundo real.</span></div>
+                            <div><strong>Interfaces avançadas</strong><span>Novas formas de interação entre pessoas e computadores.</span></div>
+                        </div>
+                        <div class="controles-tempo">
+                            <button class="botao-tempo" id="anterior-tempo" type="button" disabled aria-label="Voltar para o período anterior">← Anterior</button>
+                            <button class="botao-tempo" id="proximo-tempo" type="button" aria-label="Avançar para o próximo período">Próximo →</button>
+                        </div>
+                    </div>
+                </article>
 
-                <div>
-                    <strong>2010 em diante</strong>
-                    <p>
-                        O desenvolvimento de novos sensores, telas
-                        e processadores ajudou a tornar os dispositivos
-                        mais acessíveis.
-                    </p>
+                <div class="progresso-tempo" aria-label="Progresso da linha do tempo">
+                    <div class="progresso-trilha"><span id="progresso-tempo-preenchido"></span></div>
+                    <span id="progresso-tempo-texto">1 de 6</span>
                 </div>
-
-                <div>
-                    <strong>Hoje</strong>
-                    <p>
-                        A VR é utilizada em áreas como jogos,
-                        educação, treinamento, saúde, engenharia
-                        e entretenimento.
-                    </p>
-                </div>
-
             </div>
 
         </div>
