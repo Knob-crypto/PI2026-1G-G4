@@ -80,12 +80,12 @@ document.addEventListener("DOMContentLoaded", function () {
     if (exploradorTempo) {
 
         const periodos = [
-            ["1838 · PRIMEIROS ESTUDOS", "A primeira ideia de imersão", "Ao separar imagens para cada olho, os pesquisadores criaram a sensação de profundidade que deu início à experiência 3D.", "estereoscopia", "linha_tempo-1.webp"],
-            ["1960 · SENSORAMA", "O mundo virtual começa a sentir", "O Sensorama tentava levar o usuário além da imagem, misturando som, movimento e aromas para criar uma experiência quase real.", "simulação sensorial", "linha_tempo2.jpg"],
-            ["1990 · LABORATÓRIOS DE VR", "A tecnologia sai do conceito e entra no laboratório", "Universidades e empresas começaram a testar capacetes, luvas e sensores para explorar como pessoas poderiam interagir com mundos digitais.", "headsets e sensores", "linha_tempo3.jpeg"],
-            ["2010 · ACESSO À MÃO", "A VR ganha escala", "Com telas melhores e celulares mais poderosos, os equipamentos ficaram mais leves, mais acessíveis e prontos para uso em maior quantidade.", "VR acessível", "linha_tempo4.jpg"],
-            ["2020 · MUNDO HÍBRIDO", "Quando o real e o digital se encontram", "A realidade aumentada e as experiências mistas passaram a aparecer em aulas, reuniões e aplicativos, ampliando o que a tecnologia podia fazer.", "realidade mista", "linha_tempo5.jpg"],
-            ["FUTURO · PRÓXIMOS HORIZONTES", "Ambientes que entendem o usuário", "O próximo passo é uma VR mais natural: sensível ao gesto, à voz e ao contexto, com respostas cada vez mais intuitivas e envolventes.", "IA, voz e presença", "linha_tempo6.jpg"]
+            ["1838 · PRIMEIROS ESTUDOS", "A profundidade nasce em duas imagens", "A estereoscopia usava uma imagem diferente para cada olho e criou a primeira sensação convincente de profundidade em uma imagem fixa.", "visão estereoscópica", "linha_tempo-1.webp"],
+            ["1960 · SENSORAMA", "O cinema passa a envolver os sentidos", "O Sensorama combinava imagens, sons, vibração e aromas para simular um passeio de motocicleta e aproximar o espectador da cena.", "simulação multissensorial", "linha_tempo2.jpg"],
+            ["1990 · LABORATÓRIOS DE VR", "O usuário começa a controlar o ambiente", "Capacetes, luvas e sensores permitiram que universidades testassem movimentos e interações dentro de espaços digitais tridimensionais.", "rastreamento e interação", "linha_tempo3.jpeg"],
+            ["2010 · ACESSO À MÃO", "O smartphone coloca a VR no bolso", "Telas de alta resolução e celulares mais potentes reduziram o custo dos visores e levaram experiências virtuais a um público maior.", "visores móveis", "linha_tempo4.jpg"],
+            ["2020 · MUNDO HÍBRIDO", "O digital passa a conviver com o real", "A realidade aumentada e a realidade mista começaram a integrar objetos virtuais a aulas, reuniões, aplicativos e tarefas do cotidiano.", "experiências híbridas", "linha_tempo5.jpg"],
+            ["FUTURO · PRÓXIMOS HORIZONTES", "A experiência se adapta a cada pessoa", "Novos sistemas poderão interpretar voz, gestos e contexto para criar ambientes imersivos mais naturais, acessíveis e responsivos.", "IA e presença contextual", "linha_tempo6.jpg"]
         ];
 
         const painel = exploradorTempo.querySelector(".painel-tempo");
