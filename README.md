@@ -1,1 +1,1 @@
-
+Este projeto foi desenvolvido para a disciplina de Projeto Integrador por estudantes do Grupo 4 da turma 1G do curso de Informática para Internet no Instituto Federal Catarinense de Concórdia/Sc.O objetivo do repositório é apresentar sobre as tecnologias imersivas no desemvolvimento das habilidades em inglês em um site informativo.Tecnologias utilizadas:HTML5 e CSS3: Estruturação da página e estilização visual dos elementos.JavaScript: Lógica de clique do botão e rastreamento do movimento do mouse, e animações do carrossel.
